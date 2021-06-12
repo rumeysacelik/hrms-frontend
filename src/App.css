@@ -2,37 +2,111 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.ui.main.container{
+  margin-top:9em;
+}
+ 
+.ui.sidebar{
+  margin-left: 10em;
+ }
+
+.p1em{
+  padding-bottom: 2em !important; 
+  color:blueviolet !important;
+  position: relative;
+  right: 90px;
+  top: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.mt1bem{
+  margin-top: 15em !important;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer {
+  position: relative;
+  margin-top: 400px;
+  bottom: 0;
+  right: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.candidate{
+  color:white;
+ 
+
+}
+.jobAdvert{
+  color:white;
+}
+ 
+.c{
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ft{
+  font-size:medium;
 }
+.filtergrid{
+  color:brown;
+}
+
+.se{
+  background-color: white;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 0px 0px;
+}
+
+/* .ui.large.inverted.top.fixed.menu{
+  background-image: url(./pages/From\ Brand\ New\ To\ Brand\ Advocate_\ Using\ Trello\ For\ Positive\ Customer\ Onboarding.png);
+} */
+
+.list.alternate.icon{
+  color:white;
+}
+
+.ui.celled.table.c{
+  border-radius:0% !important;
+}
+
+.ui.large.top.fixed.menu{
+  background-color: transparent;
+}
+
+
+.ui.vertical.w100.p1em.menu{
+  
+  top:50% !important;
+ 
+}
+
+.ft{
+  position:absolute;
+  left:  0px;
+  top: 60px;
+
+
+}
+
+.navbar{
+  color:white
+}
+
+.w100{
+  color:violet !important;
+
+}
+
+
+
+
+
+
+
+
