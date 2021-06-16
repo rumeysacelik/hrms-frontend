@@ -1,30 +1,28 @@
-import React, { useEffect, useState } from 'react'
-import CandidateService from '../services/candidateService'
-import { Icon, Header, Menu, Table, Button } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState }  from 'react'
+import EmployerService from '../services/employerService';
+import { Icon, Header, Menu, Table } from 'semantic-ui-react'
 
-
-export default function CandidateList() {
-    const [candidates, setCandidates] = useState([]);
+export default function EmployerList() {
+    const [employers, setEmployers] = useState([]);
 
     useEffect(()=>{
-        let candidateService = new CandidateService()
-        candidateService.getAll().then(result=>setCandidates(result.data.data))
+        let employerService = new EmployerService()
+        employerService.getAll().then(result=>setEmployers(result.data.data))
     }, [])
+
 
     return (
         <div>
-             <Header as="h2">
+            <Header as="h2">
         <Icon  name="list alternate" />
-        <Header.Content className="candidate" >Candidate List</Header.Content>
+        <Header.Content className="employer" >Employer List</Header.Content>
       </Header >
              <Table celled className="c" style={{border:"2px solid pink"}}>
                 <Table.Header >
                     <Table.Row >
-                        <Table.HeaderCell >Email</Table.HeaderCell>
-                        <Table.HeaderCell>İsim</Table.HeaderCell>
-                        <Table.HeaderCell>Soy İsim</Table.HeaderCell>
-                        <Table.HeaderCell>Doğum Tarihi</Table.HeaderCell>
+                        <Table.HeaderCell >Şirket </Table.HeaderCell>
+                        <Table.HeaderCell>Web adresi</Table.HeaderCell>
+                        <Table.HeaderCell>Telefon</Table.HeaderCell>
 
 
                     </Table.Row>
@@ -32,13 +30,12 @@ export default function CandidateList() {
 
                 <Table.Body>
                     {
-                        candidates.map(candidate => (
+                        employers.map(employers => (
                             <Table.Row>
                                 
-                                <Table.Cell>{candidate.email}</Table.Cell>
-                                <Table.Cell>{candidate.firstName}</Table.Cell>
-                                <Table.Cell>{candidate.lastName}</Table.Cell>
-                                <Table.Cell>{candidate.birthDate}</Table.Cell>
+                                <Table.Cell>{employers.companyName}</Table.Cell>
+                                <Table.Cell>{employers.webAdress}</Table.Cell>
+                                <Table.Cell>{employers.phoneNumber}</Table.Cell>
 
                                 
                             </Table.Row>
@@ -69,5 +66,3 @@ export default function CandidateList() {
         </div>
     )
 }
-
-

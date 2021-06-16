@@ -14,15 +14,19 @@ import Filter from './layouts/Filter';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      
       
       <Container className="main">
       
         <DashBoard></DashBoard>
         
       </Container>
-      <Footer/>
+      
+      <Footer></Footer>
+      
     </div>
+    
+    
   );
 }
 

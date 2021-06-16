@@ -11,8 +11,9 @@ export default function Section() {
             <Grid >
                 <Grid.Row>
                     <Grid.Column size={12}  >
-                        <CandidateList />
-                        <JobAdvertisement/>
+                        {/* <CandidateList /> */}
+                        {/* <JobAdvertisement/> */}
+                        
                     </Grid.Column>
                 </Grid.Row>
                 

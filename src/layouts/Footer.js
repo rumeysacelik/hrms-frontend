@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     
        <div >
-      <Segment inverted vertical style={{ padding: "3em 0em" }} >
+      <Segment inverted vertical style={{ padding: "4em 0em" }} className="footerlocation" >
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
@@ -41,11 +41,11 @@ export default function Footer() {
                 </List>
               </Grid.Column>
               <Grid.Column width={7}>
-                <div class="descriptionPosition">
-                  <Header as="h2">
-                    <Header.Content className="ft">
+                <div className="descriptionPosition">
+                  <Header as="h2"  >
+                    <Header.Content >
                       <font color="white">
-                        <Icon name="hand point right" color="brown"  />
+                        <Icon name="hand point right" color="brown"  className="ft"/>
                         Human Resource Management System <br />
                         <Icon name="search" color="brown" font = ""/>
                         Bize Ulaşın

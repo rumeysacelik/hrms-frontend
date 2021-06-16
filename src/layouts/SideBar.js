@@ -1,36 +1,29 @@
 import React from "react";
-import {  Icon, Menu } from 'semantic-ui-react'
+import { Link } from "react-router-dom";
+import { Icon, Menu,Segment } from "semantic-ui-react";
 
 export default function SideBar() {
   return (
-    <div>
-      
-      <div>
-      <Menu inverted icon="labeled" vertical>
-        <Menu.Item
-          name="user"
-        >
-          <Icon name="user" />
-          Job Titles
+    <div >
+
+      <Menu fluid compact icon="labeled" vertical>
+        <Menu.Item as={Link} to={"/jobAdvertisement"} >
+            <Icon name="list" />
+            İş ilanları        
         </Menu.Item>
 
-        <Menu.Item
-          name="user"
-        >
-          <Icon name="user" />
-          Candidates
+        <Menu.Item as={Link} to={"/employers"}>
+            <Icon name="factory" />
+            İş verenler       
         </Menu.Item>
 
-        <Menu.Item
-          name="user"
-        >
+        <Menu.Item as={Link} to={"/candidates"}>
           <Icon name="user" />
-          Employers
+          Kullanıcılar
         </Menu.Item>
+
       </Menu>
-    </div>
-
-
+      
     </div>
   );
 }

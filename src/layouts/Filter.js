@@ -45,9 +45,9 @@ export default function Filter() {
     }))
 
     return (
-        <div className="ft">
-            <Menu className="w100 p1em " vertical style={{border:"3px solid pink"}}>
-        <Menu.Item> 
+        <div >
+            <Menu className="w100 p1em " vertical style={{border:"3px solid pink"}} >
+        <Menu.Item className="filter"> 
           <Menu.Header >Şehir</Menu.Header>
           <Menu.Menu >
           <Dropdown className="w100" placeholder='Şehir seç' search selection options={cityOption} style={{border:"2px solid pink"}}/>
@@ -68,7 +68,7 @@ export default function Filter() {
           <Dropdown className="w100" placeholder='Şirket seç' search selection options={employersOption} style={{border:"2px solid pink"}}/>
           </Menu.Menu >
         </Menu.Item >
-        <Button className="w100" floated="right" >Filtrele <i aria-hidden="true" class="search icon"></i></Button>
+        <Button className="w100" floated="right" >Filtrele <i aria-hidden="true" className="search icon"></i></Button>
       </Menu> 
         </div>
     )

@@ -17,6 +17,7 @@
   position: relative;
   right: 90px;
   top: 45px;
+  
 }
 
 
@@ -27,7 +28,7 @@
 
 .footer {
   position: relative;
-  margin-top: 400px;
+  margin-top: 500px;
   bottom: 0;
   right: 1px;
 }
@@ -47,6 +48,7 @@
 
 .ft{
   font-size:medium;
+  
 }
 .filtergrid{
   color:brown;
@@ -78,8 +80,6 @@
 .ui.large.top.fixed.menu{
   background-color: transparent;
 }
-
-
 .ui.vertical.w100.p1em.menu{
   
   top:50% !important;
@@ -89,19 +89,28 @@
 .ft{
   position:absolute;
   left:  0px;
-  top: 60px;
-
-
+  top: 50px;
 }
 
+.footerlocation{
+  left:  0px;
+  top: 300px;
+}
+
+
 .navbar{
-  color:white
+  color:white;
+  border-bottom-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  
+  box-shadow: 10px 10px 5px grey;
+  
 }
 
 .w100{
   color:violet !important;
-
 }
+
 
 
 
