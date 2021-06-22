@@ -44,7 +44,7 @@ export default function JobAdvertisement() {
               <Table.Cell>
                 <Button
                   as={Link}
-                  to={`/jobadvertisement/${jobAdvertisement.id}`}
+                  to={`/jobads/${jobAdvertisement.id}`}
                   content="Detayları Gör"
                   icon="right arrow"
                   labelPosition="right"
