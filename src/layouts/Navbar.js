@@ -10,10 +10,12 @@ export default function Navbar() {
 
 <div >
       <Menu  fixed="top" size="large"  >
+      
         <Container >
           <Menu.Item name="building outline" >
             <Icon name="building outline" size="large" className="navbar" />
             HRMS.Bul
+           
           </Menu.Item >
           <Menu.Item name="Home" as={Link} to={"/"} />
           <Menu.Item name="Job Advert" as={Link} to={"/jobAdvertisement"} />
@@ -28,12 +30,12 @@ export default function Navbar() {
             </Dropdown> */}
 
             <Menu.Item>
-              <Button.Group className="button">
+              <Button.Group className="navbutton">
                 <Button primary as={Link} to={"/login"}>Login</Button>
                 <Button.Or />
                 <Button positive as={Link} to={"/register"}>Register</Button>
               </Button.Group>
-              <Button positive as={Link} to={"/postJobAdvertisement"}>İlan oluştur</Button>
+              <Button danger as={Link} to={"/postJobAdvertisement"} >İlan oluştur</Button>
             </Menu.Item>
           </Menu.Menu>
         </Container>

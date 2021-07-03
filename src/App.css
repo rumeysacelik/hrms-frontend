@@ -12,7 +12,7 @@
  }
 
 .p1em{
-  padding-bottom: 2em !important; 
+  padding-bottom: 4em !important; 
   color:blueviolet !important;
   position: relative;
   right: 90px;
@@ -79,6 +79,8 @@
 
 .ui.large.top.fixed.menu{
   background-color: transparent;
+  position: absolute;
+  box-shadow: 2px 2px 2px grey;
 }
 .ui.vertical.w100.p1em.menu{
   
@@ -102,8 +104,7 @@
   color:white;
   border-bottom-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  
-  box-shadow: 10px 10px 5px grey;
+ 
   
 }
 
@@ -111,11 +112,39 @@
   color:violet !important;
 }
 
+.arkaplan{
+  background-image: url(./jackson-so-_t-l5FFH8VA-unsplash.jpg)
+}
 
+.ui.vertical.w100.p1em.menu{
+  margin-top: -200px;
+   margin-left: 1000px; 
+   border-radius: 7%;
+   size:200px;
+}
 
+.ui.compact.fluid.vertical.labeled.icon.menu{
+  border-radius: 8%;
+  margin-top: 70px;
+}
 
+.ui.celled.table.c{
+  margin-top: 60px;
+}
 
+.content.candidate{
+  margin-top: 80px;
+}
 
+.navbutton{
+  margin-right: 20px !important;
+}
 
+.ui.primary.button{
+  background-color: purple !important;
+}
+.ui.danger.button{
+  background-color: transparent !important;
+}
 
 

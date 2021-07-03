@@ -13,6 +13,7 @@ import { useHistory } from 'react-router-dom';
 export default function PostJobAdvertisement() {
     let jobAdvertisementService = new JobAdvertisementService();
     
+
   const JobAdvertAddSchema = Yup.object().shape({
       
     appealExpirationDate: Yup.date().nullable().required("Bu alanın doldurulması zorunludur"),
@@ -54,7 +55,7 @@ export default function PostJobAdvertisement() {
       alert("İş ilanı eklendi onayın ardından listelenecektir");
       history.push("/jobadvertisement");
     },
-  }); 
+  });
  
   const [workHours, setWorkHours] = useState([]);
   const [workTypes, setWorkTypes] = useState([]);

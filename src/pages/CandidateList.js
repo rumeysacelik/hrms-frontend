@@ -33,7 +33,7 @@ export default function CandidateList() {
                 <Table.Body>
                     {
                         candidates.map(candidate => (
-                            <Table.Row>
+                            <Table.Row key={candidate.id}>
                                 
                                 <Table.Cell>{candidate.email}</Table.Cell>
                                 <Table.Cell>{candidate.firstName}</Table.Cell>

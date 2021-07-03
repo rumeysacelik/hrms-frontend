@@ -3,7 +3,7 @@ import EmployerService from '../services/employerService';
 import { Icon, Header, Menu, Table } from 'semantic-ui-react'
 
 export default function EmployerList() {
-    const [employers, setEmployers] = useState([]);
+    const [employers,  setEmployers] = useState([]);
 
     useEffect(()=>{
         let employerService = new EmployerService()
@@ -31,7 +31,7 @@ export default function EmployerList() {
                 <Table.Body>
                     {
                         employers.map(employers => (
-                            <Table.Row>
+                            <Table.Row key={employers.id}>
                                 
                                 <Table.Cell>{employers.companyName}</Table.Cell>
                                 <Table.Cell>{employers.webAdress}</Table.Cell>

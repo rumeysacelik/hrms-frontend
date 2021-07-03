@@ -12,7 +12,17 @@ import Footer from "./Footer";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PostJobAdvertisement from "../pages/PostJobAdvertisement";
+import PostCandidateCv from "../pages/PostCandidateCv";
 import JobAdvertisementDetail from "../pages/JobAdvertisementDetail";
+import Cvs from "../pages/Cvs";
+import CandidateCv from "../pages/CandidateCv";
+import CandidateCvDetail from "../pages/CandidateCvDetail";
+import UpdateSchool from "../pages/Cv/UpdateSchool";
+import UpdateLanguage from "../pages/Cv/UpdateLanguage";
+import UpdateExperience from "../pages/Cv/UpdateExperience";
+import UpdateCv from "../pages/Cv/UpdateCv";
+import UpdateCvList from "../pages/Cv/UpdateCvList";
+
 
 export default function DashBoard() {
   return (
@@ -39,7 +49,16 @@ export default function DashBoard() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/postJobAdvertisement" component={PostJobAdvertisement} />
-              <Route exact path="/jobAdvertisementDetail" component={JobAdvertisementDetail} />
+              <Route exact path="/jobads/:id" component={JobAdvertisementDetail}/>
+              <Route exact path="/cvs" component={CandidateCv}/>
+              <Route exact path="/cvs/:id" component={CandidateCvDetail}/>
+              <Route exact path="/update" component={PostCandidateCv}/>
+              <Route path="/schoolUpdate" component={UpdateSchool} />
+              <Route path="/langUpdate" component={UpdateLanguage} />
+              <Route path="/experienceUpdate" component={UpdateExperience} />
+              <Route path="/cvs/edit/:id" component={UpdateCv} />
+              <Route path="/candidateUpdate" component={UpdateCvList} />
+
             </Grid.Column>
           </Grid.Row>
         </Grid>

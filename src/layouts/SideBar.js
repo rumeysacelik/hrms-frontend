@@ -22,6 +22,11 @@ export default function SideBar() {
           Kullanıcılar
         </Menu.Item>
 
+        <Menu.Item as={Link} to={"/cvs"}>
+          <Icon name="book" />
+          Cv'ler
+        </Menu.Item>
+
       </Menu>
       
     </div>
