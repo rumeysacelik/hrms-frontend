@@ -21,7 +21,6 @@ import JobAdvertisementService from "../services/jobAdvertisementService";
 import CityFilter from "../layouts/CityFilter";
 import WorkTypeFilter from "../layouts/WorkTypeFilter";
 import AddFavourite from "./Favourite/AddFavourite";
-import favouriteService from "../services/favouriteService";
 import FavouriteService from "../services/favouriteService";
 
 import { toast } from "react-toastify";
@@ -85,6 +84,16 @@ export default function JobAdvertisement() {
         toast.success("Favorilere Eklendi")
       );
   };
+
+  const saveToDB = (object,bool) => {
+    if(bool){
+      favouriteService.delete(object.candidateId,object.jobAdvertisementId)
+      return;
+    }
+    else{
+      favouriteService.add(object)
+    }
+  }
 
   return (
     <div>
@@ -160,6 +169,10 @@ export default function JobAdvertisement() {
                         onClick={saveHandler}
                         data={candidateFavJobAds}
                         jobId={jobAdvertisement.id}
+
+                        onClick={saveToDB}
+                  
+                  
                       ></AddFavourite>
                   </Table.Cell>
                 </Table.Row>
