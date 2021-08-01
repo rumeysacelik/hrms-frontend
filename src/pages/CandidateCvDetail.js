@@ -5,9 +5,7 @@ import { Card, Table, Header, Button, Icon } from "semantic-ui-react";
 import { useSelector } from "react-redux";
 import "reactjs-popup/dist/index.css";
 import Popup from "reactjs-popup";
-import UpdateLanguage from "./LanguageUpdate";
-import UpdateSchools from "./SchoolUpdate";
-import TalentUpdate from "./TalentUpdate";
+
 
 export default function CandidateCvDetail() {
   const {authItem} = useSelector(state => state.auth)
@@ -99,7 +97,7 @@ export default function CandidateCvDetail() {
           <Card.Header>
           Okuduğu Okullar
           
-                            <UpdateSchools cvId={id}/>
+                            {/* <UpdateSchools cvId={id}/> */}
                           
           </Card.Header>
         </Card.Content>
@@ -132,7 +130,7 @@ export default function CandidateCvDetail() {
           <Card.Content header="Yabancı Diller"/>
           <Card.Header>
             { <Popup trigger={<button className="ui button" style={{marginLeft:"1em"}}> Güncelle </button>} modal>
-                            <UpdateLanguage cvId={id}/>
+                            {/* <UpdateLanguage cvId={id}/> */}
                           </Popup>}
           </Card.Header>
           <Table celled color={"black"}>
@@ -159,7 +157,7 @@ export default function CandidateCvDetail() {
           <Card.Header>
           Yazılım Teknolojileri
           { <Popup trigger={<button className="ui button" style={{marginLeft:"1em"}}> Güncelle </button>} modal>
-                            <TalentUpdate cvId={id}/>
+                            {/* <TalentUpdate cvId={id}/> */}
                           </Popup>}
           </Card.Header>
         </Card.Content>
