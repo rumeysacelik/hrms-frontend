@@ -77,10 +77,12 @@ export default function UpdateCv() {
 
 <div style={{ backgroundColor: "skyblue", height: "30px" }}>
         {" "}
+        <Card.Content>
         <Card.Header>
           {" "}
           <Label ribbon>Dil</Label>{" "}
         </Card.Header>
+        </Card.Content>
       </div>
       {cv?.languages.map((language) => (
         <Card.Content>

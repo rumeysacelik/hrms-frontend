@@ -24,7 +24,7 @@ export default function WorkTypeFilter({onSelect}) {
           }
     return (
         <div>
-        <Menu fluid compact icon="labeled" vertical>
+        <Menu fluid compact icon="labeled" vertical  style={{ borderRadius: "0%"}}>
         <Menu.Item>
         <Menu.Header>Çalışma Tipi</Menu.Header>
         <Menu.Menu>

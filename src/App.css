@@ -101,7 +101,7 @@
 
 
 .navbar{
-  color:white;
+  color:rgb(81, 89, 194);
   border-bottom-left-radius: 50%;
   border-bottom-left-radius: 50%;
  
@@ -115,6 +115,8 @@
 .arkaplan{
   background-image: url(./jackson-so-_t-l5FFH8VA-unsplash.jpg)
 }
+
+
 
 .ui.vertical.w100.p1em.menu{
   margin-top: -200px;
@@ -141,10 +143,39 @@
 }
 
 .ui.primary.button{
-  background-color: purple !important;
+  background-color: rgb(81, 89, 194) !important;
 }
-.ui.danger.button{
-  background-color: transparent !important;
+.ui.positive.button{
+  background-color: rgb(240, 232, 235) !important;
+  
 }
 
+.Icon{
+  color:rgb(81, 89, 194)
+}
+
+.textInput{
+  position: relative;
+  background-color:honeydew !important;
+  font-size: 20px;
+  font-family:serif;
+  font-weight:lighter;
+  margin-left:130px !important;
+  margin-top: -250px !important;
+  border-radius: 2px !important;
+  box-shadow:2px 2px 2px rgb(172, 172, 172) !important;
+
+}
+
+.p {
+  width:100px;
+  float: left;
+  margin:4px;
+  padding:4px;
+  border-right: 1px solid rgb(162, 162, 163) !important;
+}
+
+.jobAdPage{
+  margin: auto;
+}
 

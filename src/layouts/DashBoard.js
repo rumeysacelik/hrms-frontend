@@ -8,7 +8,7 @@ import CandidateList from "../pages/CandidateList";
 import SideBar from "./SideBar";
 import EmployerList from "../pages/EmployerList";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+import HomePage from "./HomePage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PostJobAdvertisement from "../pages/PostJobAdvertisement";
@@ -22,6 +22,7 @@ import UpdateLanguage from "../pages/Cv/UpdateLanguage";
 import UpdateExperience from "../pages/Cv/UpdateExperience";
 import UpdateCv from "../pages/Cv/UpdateCv";
 import UpdateCvList from "../pages/Cv/UpdateCvList";
+import EmployerUpdate from "../pages/EmployerUpdate";
 
 
 export default function DashBoard() {
@@ -38,11 +39,11 @@ export default function DashBoard() {
               <Section />
             </Grid.Column>
 
-            <SideBar></SideBar>
+            {/* <SideBar></SideBar> */}
 
             <Grid.Column width={12}>
               <Route />
-              <Route exact path="/" component={CandidateList} />
+              <Route exact path="/" component={HomePage} />
               <Route exact path="/candidates" component={CandidateList} />
               <Route exact path="/jobAdvertisement" component={JobAdvertisement} />
               <Route exact path="/employers" component={EmployerList} />
@@ -58,6 +59,7 @@ export default function DashBoard() {
               <Route path="/experienceUpdate" component={UpdateExperience} />
               <Route path="/cvs/edit/:id" component={UpdateCv} />
               <Route path="/candidateUpdate" component={UpdateCvList} />
+              <Route path="/employerUpdate" component={EmployerUpdate} />
 
             </Grid.Column>
           </Grid.Row>

@@ -17,7 +17,7 @@ export default function CityFilter({onSelect}) {
       }));
     return (
         <div>
-            <Menu fluid compact icon="labeled" vertical>
+            <Menu fluid compact icon="labeled" vertical  style={{ borderRadius: "0%"}}>
           <Menu.Item className="filter">
           <Menu.Header>Şehir</Menu.Header>
           <Menu.Menu>

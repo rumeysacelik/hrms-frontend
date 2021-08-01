@@ -4,4 +4,7 @@ export default class employerService{
     getAll(){
         return axios.get("http://localhost:8080/api/employers/getall")
     }
+    findById(id){
+        return axios.get("http://localhost:8080/api/employers/findbyid?id="+id)
+    }
 }

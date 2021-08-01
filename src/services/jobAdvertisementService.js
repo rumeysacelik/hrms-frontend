@@ -24,5 +24,9 @@ export default class jobAdvertisementService{
     getOneById(id){
         return axios.get("http://localhost:8080/api/jobAdvertisements/getOneById?id="+id)
     }
-    
+
+    getConfirmedJobAdsWithPageable(pageNo,pageSize){
+        return axios.get(`http://localhost:8080/api/jobAdvertisements/getConfirmedJobAdsWithPageable?pageNo=${pageNo}&pageSize=${pageSize}`)
+    }
+    //http://localhost:8080/api/jobAdvertisements/getConfirmedJobAdsWithPageable?pageNo=1&pageSize=1
 }
